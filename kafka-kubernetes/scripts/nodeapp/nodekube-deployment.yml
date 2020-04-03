@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodekube-deployment
+  labels:
+    app: nodekube
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodekube
+  template:
+    metadata:
+      labels:
+        app: nodekube
+    spec:
+      containers:
+      - name: nodekube
+        image: localhost:5000/node-test
+        ports:
+        - containerPort: 3000

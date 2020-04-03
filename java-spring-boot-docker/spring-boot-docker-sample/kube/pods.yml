@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spring-sample
+spec:
+  containers:
+    - image: quanleminh/spring-boot-sample:1.0
+      name: spring-sample
+      ports:
+        - containerPort: 30000
