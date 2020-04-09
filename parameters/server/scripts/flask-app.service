@@ -1,0 +1,15 @@
+# Metadata and dependencies section 
+# location /etc/systemd/system/flask-app.service
+[Unit]
+Description=Flask App service
+After=network.target
+#Define users and app working directory
+[Service]
+User=root
+Group=root
+WorkingDirectory=/app
+Environment="WORK_ENV=PROD"
+ExecStart=/opt/venv/bin/uwsgi --ini flask-app.ini
+#Link the service to start on multi-user system up
+[Install]
+WantedBy=multi-user.target

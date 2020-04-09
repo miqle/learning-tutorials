@@ -1,0 +1,16 @@
+version: "2.2"
+
+services:
+  api:
+    build: .
+    #image: nginx:1.17.9
+    restart: always
+    networks: 
+      - net
+    ports:
+      - 8080:80
+    volumes:
+      - .\app-data:/app/data
+networks:
+  net:
+    driver: bridge
