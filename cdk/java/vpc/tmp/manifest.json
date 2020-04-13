@@ -1,0 +1,571 @@
+{
+  "version": "1.21.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "VpcStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "VpcStack.template.json"
+      },
+      "metadata": {
+        "/VpcStack/vpc-master/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmaster2650CDFA",
+            "trace": [
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:286:25)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet1Subnet60FEBB06",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:576:24)",
+              "new PublicSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:733:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet1RouteTableDD44C007",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:591:23)",
+              "new PublicSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:733:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet1RouteTableAssociation1D489152",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:596:9)",
+              "new PublicSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:733:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet1DefaultRouteD2AE86DC",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:623:23)",
+              "Vpc.publicSubnets.forEach.publicSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:317:30)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:316:32)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet1EIPE04A945B",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:744:27)",
+              "NatGateway.configureNat (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:52:33)",
+              "Vpc.createNatGateways (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet1NATGateway2A4468FD",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:742:21)",
+              "NatGateway.configureNat (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:52:33)",
+              "Vpc.createNatGateways (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet2Subnet29BFBFD7",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:576:24)",
+              "new PublicSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:733:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet2RouteTable644062BB",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:591:23)",
+              "new PublicSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:733:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet2RouteTableAssociation717E2A14",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:596:9)",
+              "new PublicSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:733:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:505:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet2DefaultRouteFE571D7D",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:623:23)",
+              "Vpc.publicSubnets.forEach.publicSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:317:30)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:316:32)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet2EIP219F22C4",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:744:27)",
+              "NatGateway.configureNat (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:52:33)",
+              "Vpc.createNatGateways (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPublicSubnet2NATGateway227CBB3E",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:742:21)",
+              "NatGateway.configureNat (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:52:33)",
+              "Vpc.createNatGateways (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPrivateSubnet1Subnet152F4751",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:576:24)",
+              "new PrivateSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:760:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPrivateSubnet1RouteTable285139D7",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:591:23)",
+              "new PrivateSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:760:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPrivateSubnet1RouteTableAssociationC0466AA9",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:596:9)",
+              "new PrivateSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:760:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPrivateSubnet1DefaultRoute08910B28",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:664:23)",
+              "NatGateway.configureSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:63:16)",
+              "NatGateway.configureNat (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:57:18)",
+              "Vpc.createNatGateways (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPrivateSubnet2Subnet5FEC402E",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:576:24)",
+              "new PrivateSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:760:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPrivateSubnet2RouteTable94529920",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:591:23)",
+              "new PrivateSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:760:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPrivateSubnet2RouteTableAssociation96494C7E",
+            "trace": [
+              "new Subnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:596:9)",
+              "new PrivateSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:760:9)",
+              "availabilityZones.forEach (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:510:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:489:32)",
+              "Vpc.createSubnets (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:485:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:306:14)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterPrivateSubnet2DefaultRouteA1BE185E",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:664:23)",
+              "NatGateway.configureSubnet (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:63:16)",
+              "NatGateway.configureNat (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:57:18)",
+              "Vpc.createNatGateways (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:463:18)",
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:322:22)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterIGWC70A543E",
+            "trace": [
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:310:25)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/VpcStack/vpc-master/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcmasterVPCGW509C2A52",
+            "trace": [
+              "new Vpc (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-kernel-EUZXRG\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:312:25)",
+              "obj._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:49)",
+              "Kernel._wrapSandboxCode (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:8313:20)",
+              "Kernel._create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7853:26)",
+              "Kernel.create (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7600:21)",
+              "KernelHost.processRequest (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7388:28)",
+              "KernelHost.run (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7328:14)",
+              "Immediate.setImmediate [as _onImmediate] (C:\\Users\\QuanLe\\AppData\\Local\\Temp\\jsii-java-runtime2194958619108125737\\jsii-runtime.js:7331:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.32.2",
+      "@aws-cdk/core": "1.32.2",
+      "@aws-cdk/region-info": "1.32.2",
+      "@aws-cdk/aws-iam": "1.32.2",
+      "@aws-cdk/aws-cloudwatch": "1.32.2",
+      "@aws-cdk/aws-logs": "1.32.2",
+      "@aws-cdk/aws-events": "1.32.2",
+      "@aws-cdk/aws-kms": "1.32.2",
+      "@aws-cdk/aws-s3": "1.32.2",
+      "@aws-cdk/aws-ssm": "1.32.2",
+      "@aws-cdk/aws-ec2": "1.32.2",
+      "jsii-runtime": "Java/1.8.0_151"
+    }
+  }
+}
