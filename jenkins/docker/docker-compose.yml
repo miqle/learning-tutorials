@@ -1,0 +1,12 @@
+version: "2.2"
+
+services:
+    jenkins-master:
+        build: .
+        ports:
+            - "9090:8080"
+            - "50000:50000"
+        volumes:
+            - .\jenkins_home:/var/jenkins_home
+            # Linux
+            #- ~/jenkins_home:/var/jenkins_home
