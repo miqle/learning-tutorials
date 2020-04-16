@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 import software.amazon.awscdk.core.Construct;
 import software.amazon.awscdk.core.Environment;
 import software.amazon.awscdk.core.Stack;
-import software.amazon.awscdk.core.StackProps;
 
 @Component
 public class VpcStack extends AbstractStack {

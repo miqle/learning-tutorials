@@ -17,20 +17,20 @@ import software.amazon.awscdk.core.App;
         NatProviderConfig.class,
         VpcSubnetConfiguration.class})
 public class VpcApp
-  implements CommandLineRunner {
+        implements CommandLineRunner {
 
     @Autowired
     private App app;
- 
+
     private static Logger LOG = LoggerFactory
-      .getLogger(VpcApp.class);
- 
+            .getLogger(VpcApp.class);
+
     public static void main(String[] args) {
         LOG.info("STARTING THE APPLICATION");
         SpringApplication.run(VpcApp.class, args);
         LOG.info("APPLICATION FINISHED");
     }
-  
+
     @Override
     public void run(String... args) {
         app.synth();

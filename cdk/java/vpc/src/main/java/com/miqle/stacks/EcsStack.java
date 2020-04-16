@@ -8,7 +8,7 @@ import software.amazon.awscdk.core.Environment;
 import software.amazon.awscdk.core.Stack;
 
 @Component
-public class EcsStack extends AbstractStack{
+public class EcsStack extends AbstractStack {
 
     @Autowired
     public EcsStack(@Qualifier("app") Construct app, Environment environment) {

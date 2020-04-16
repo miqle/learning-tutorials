@@ -1,18 +1,12 @@
 package com.miqle.resources.vpc;
 
 import com.miqle.stacks.VpcStack;
-import com.miqle.utils.ExportNameConfigEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import software.amazon.awscdk.core.CfnOutput;
-import software.amazon.awscdk.core.CfnOutputProps;
 import software.amazon.awscdk.services.ec2.SubnetConfiguration;
 import software.amazon.awscdk.services.ec2.Vpc;
 
 import java.util.List;
-import java.util.stream.Collectors;
-
-import static com.miqle.utils.ExportNameConfigEnum.*;
 
 @Component
 public class VpcResource {

@@ -11,7 +11,7 @@ import software.amazon.awscdk.core.App;
 import software.amazon.awscdk.core.Environment;
 
 @Configuration
-@PropertySource({"classpath:vpc-master/stack.properties"  })
+@PropertySource({"classpath:vpc-master/stack.properties"})
 @ComponentScan(basePackages = {"com.miqle.stacks", "com.miqle.resources"})
 public class AppConfig {
 
