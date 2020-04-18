@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mongo-ss
+  labels:
+    app: mongodb
+    type: database
+
+spec:
+  selector:
+    matchLabels:
+      app: mongodb
+  serviceName: mongo-svc 
+  replicas: 3
+  template:
+    metadata:
+      name: mongodb
+      labels:
+        app: mongodb
+    spec:
+      containers:
+        - name: mongo
+          image: mongo:4.2.5
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+            - name: data
+              mountPath: /data/db
+          command:
+            - mongod
+            - "--replSet"
+            - rs0
+            - --bind_ip_all
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 50Mi
+          
+    

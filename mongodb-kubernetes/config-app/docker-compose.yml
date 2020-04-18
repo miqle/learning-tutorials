@@ -1,0 +1,13 @@
+version: "2.2"
+
+services: 
+  mongodb:
+    build: .
+    ports:
+      - "27017:27017"
+    volumes: 
+      - mongodata:/data/db
+
+volumes:
+  mongodata:
+    driver: local

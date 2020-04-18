@@ -41,8 +41,8 @@ spec:
         volumeMounts:
           - name: log
             mountPath: /var/log/kafka
-      volumes:
-        - name: log 
+      # volumes:
+      #   - name: log 
           #emptyDir: {}
-          persistentVolumeClaim:
-            claimName: pvc-persistent-cfg
+          # persistentVolumeClaim:
+          #   claimName: pvc-persistent-cfg
